@@ -1,28 +1,28 @@
 import React from 'react'
 import styled from 'styled-components'
 import {IoIosArrowForward} from "react-icons/io"
-import singer from "../../assets/042_316x316cc.webp"
-import singer1 from "../../assets/043_316x316cc.webp"
-import singer2 from "../../assets/044_316x316cc.webp"
-import singer3 from "../../assets/045_316x316cc.webp"
-import singer4 from "../../assets/046_316x316cc.webp"
+import singer from "../../assets/049_316x316cc.webp"
+import singer1 from "../../assets/083_316x316cc.webp"
+import singer2 from "../../assets/051_316x316cc.webp"
+import singer3 from "../../assets/052_316x316cc.webp"
+import singer4 from "../../assets/053_316x316cc.webp"
 
 
 
 const props = [
-    {picture: singer, text1: "Top 100: Global" },
-    {picture: singer1, text1: "Top 100: Nigeria" },
-    {picture: singer2, text1: "Top 100: UK" },
-    {picture: singer3, text1: "Top 100: USA" },
-    {picture: singer4, text1: "Top 100: South Africa" },
+    {picture: singer, text1: "Top 25: Lagos" },
+    {picture: singer1, text1: "Top 25: London" },
+    {picture: singer2, text1: "Top 25: Accra" },
+    {picture: singer3, text1: "Top 25: Johannesburg" },
+    {picture: singer4, text1: "Top 25: Nairobi" },
   
 ]
-const Release = () => {
+const Charts = () => {
   return (
     <div>
         <Container>
             <Main>
-                <Text>Daily Top 100 <Icon/></Text>
+                <Text>City Charts  <Icon/></Text>
                 <Holder>
                    {
                     props.map((props)=>(
@@ -32,7 +32,7 @@ const Release = () => {
                         </ImageHolder>
                         <Div>
                         <Text1>{props.text1}</Text1>
-                        <IconHold>E</IconHold>
+                        
                         </Div>
                         <Text2>Apple Music</Text2>
                     </Card>
@@ -46,17 +46,11 @@ const Release = () => {
   )
 }
 
-export default Release
+export default Charts
 const Text2 = styled.div`
 font-weight: 300;
 font-size: 13px;
 
-`
-const IconHold = styled.div`
-background-color: black;
-color: white;
-padding: 0 5px;
-font-size: 10px;
 `
 const Text1 = styled.div`
 font-weight: 400;

@@ -1,28 +1,28 @@
 import React from 'react'
 import styled from 'styled-components'
 import {IoIosArrowForward} from "react-icons/io"
-import singer from "../../assets/042_316x316cc.webp"
-import singer1 from "../../assets/043_316x316cc.webp"
-import singer2 from "../../assets/044_316x316cc.webp"
-import singer3 from "../../assets/045_316x316cc.webp"
-import singer4 from "../../assets/046_316x316cc.webp"
-
+import singer from "../../assets/055_316x316bb.webp"
+import singer1 from "../../assets/056_316x316SC.DN01.webp"
+import singer2 from "../../assets/064_316x316bb.webp"
+import singer3 from "../../assets/065_316x316bb.webp"
+import singer5 from "../../assets/066_316x316SC.DN01.webp"
 
 
 const props = [
-    {picture: singer, text1: "Top 100: Global" },
-    {picture: singer1, text1: "Top 100: Nigeria" },
-    {picture: singer2, text1: "Top 100: UK" },
-    {picture: singer3, text1: "Top 100: USA" },
-    {picture: singer4, text1: "Top 100: South Africa" },
-  
+    {picture: singer, text: "The More The Better", text1: "Teknow"},
+    {picture: singer1, text: "Africa To The World", text1: "Apple Music African"},
+    {picture: singer3, text: "Emotions-EP", text1: "Khalid"},
+    {picture: singer2, text: "Blessed", text1: "Mohbad"},
+    {picture: singer5, text: "Afrobeats", text1: "Apple Music African"}
 ]
-const Release = () => {
+
+   
+const Hits = () => {
   return (
     <div>
         <Container>
             <Main>
-                <Text>Daily Top 100 <Icon/></Text>
+                <Text>New Hits <Icon/></Text>
                 <Holder>
                    {
                     props.map((props)=>(
@@ -31,10 +31,10 @@ const Release = () => {
                             <Image src={props.picture}/>
                         </ImageHolder>
                         <Div>
-                        <Text1>{props.text1}</Text1>
+                        <Text1>{props.text}</Text1>
                         <IconHold>E</IconHold>
                         </Div>
-                        <Text2>Apple Music</Text2>
+                        <Text2>{props.text1}</Text2>
                     </Card>
 
                     ))
@@ -46,7 +46,7 @@ const Release = () => {
   )
 }
 
-export default Release
+export default Hits
 const Text2 = styled.div`
 font-weight: 300;
 font-size: 13px;
